@@ -81,6 +81,7 @@ export {
   FileTooLargeError,
   ServerError,
 } from './error-handler';
+export { IEmailLocals } from './email.interface';
 export { verifyGatewayRequest } from './gateway-middleware';
 export { winstonLogger } from './logger';
 export {
