@@ -24,7 +24,7 @@ export function verifyGatewayRequest(
       'verifyGatewayRequest() method: Request not coming from api gateway'
     );
   }
-  const token: string = req.headers.gatewayToken as string;
+  const token: string = req.headers?.gatewayToken as string;
   if (!token) {
     throw new NotAuthorizedError(
       'Invalid Request',
